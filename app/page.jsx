@@ -1,5 +1,6 @@
 import Image from "next/image";
+import ToDos from "@/components/ToDos";
 
 export default function Home() {
-  return <h1>hello</h1>;
+  return <ToDos />;
 }
