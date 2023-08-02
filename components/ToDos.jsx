@@ -11,7 +11,7 @@ export default function ToDos() {
 
         <div className="flex gap-2">
           <RemoveTodo />
-          <Link href={"/editTodo/123"}>
+          <Link href={"/editDos/123"}>
             <HiPencilAlt size={25} />
           </Link>
         </div>
