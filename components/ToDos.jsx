@@ -1,7 +1,23 @@
 import Link from "next/link";
 import RemoveTodo from "./RemoveTodo";
 import { HiPencilAlt } from "react-icons/hi";
-export default function ToDos() {
+
+const getTodos = async () => {
+  try {
+    const rsp = await fetch("http://localhost:3000/api/todos", {
+      cache: "no-store",
+    });
+    if (!rsp.ok) {
+      throw new Error("Failed!");
+    }
+    return rsp.json();
+  } catch (error) {
+    console.log("error!");
+  }
+};
+
+export default async function ToDos() {
+  const { todos } = await getTodos();
   return (
     <>
       <div className="flex justify-between border border-slate-300 my-3 p-3 gap-5 items-start">
