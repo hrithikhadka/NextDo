@@ -21,14 +21,17 @@ export default async function ToDos() {
   return (
     <>
       {todos.map((t) => (
-        <div className="flex justify-between border border-slate-300 my-3 p-3 gap-5 items-start">
+        <div
+          key={t._id}
+          className="flex justify-between border border-slate-300 my-3 p-3 gap-5 items-start"
+        >
           <div>
             <h2 className="text-2xl font-bold">{t.name}</h2>
           </div>
 
           <div className="flex gap-2">
             <RemoveTodo />
-            <Link href={"/editDos/${t._id}"}>
+            <Link href={`/editDos/${t._id}`}>
               <HiPencilAlt size={25} />
             </Link>
           </div>
