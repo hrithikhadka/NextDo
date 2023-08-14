@@ -30,7 +30,7 @@ export default async function ToDos() {
           </div>
 
           <div className="flex gap-2">
-            <RemoveTodo />
+            <RemoveTodo id={t._id} />
             <Link href={`/editDos/${t._id}`}>
               <HiPencilAlt size={25} />
             </Link>

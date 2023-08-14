@@ -21,5 +21,5 @@ export async function DELETE(req) {
   const id = req.nextUrl.searchParams.get("id");
   await connectMongo();
   await Todo.findByIdAndDelete(id);
-  return NextResponse.json({ message: "Todo deleted" });
+  return NextResponse.json({ message: "Todo deleted" }, { status: 200 });
 }
