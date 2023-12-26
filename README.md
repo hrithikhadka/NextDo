@@ -1,3 +1,21 @@
+# NextDo - Todo Application with Next.js
+
+NextDo is a simple todo application built with Next.js, React, and MongoDB using Mongoose. This project provides a straightforward setup for building and running a todo application locally.
+
+## Features
+
+- Add a todo
+- delete a todo
+- edit a todo
+
+## Installation
+
+1. Clone the repository:
+
+   git clone https://github.com/hrithikhadka/NextDo
+   cd nextdo
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
